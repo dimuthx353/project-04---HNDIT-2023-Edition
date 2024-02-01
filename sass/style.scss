@@ -137,11 +137,28 @@ h1 {
     }
   }
 }
+.copyright {
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #f0f0f0f0;
+
+  p {
+    background: -webkit-linear-gradient(
+      rgba(12, 27, 241, 0.622),
+      rgb(4, 212, 80)
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+    letter-spacing: 3px;
+  }
+}
 
 #dateTime {
   padding: 10px;
   text-align: center;
-  margin-top: 10px;
   background-color: #000;
   color: #ffff;
   letter-spacing: 2px;
