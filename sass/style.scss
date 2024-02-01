@@ -169,6 +169,10 @@ h1 {
 }
 
 @media screen and (max-width: 400px) {
+  h1 {
+    width: 100%;
+  }
+
   .downBtn,
   .topBtn {
     font-size: 1.4rem;
