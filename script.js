@@ -3,6 +3,11 @@ import { members } from './members.js';
 const container = document.getElementById('container');
 const downBtn = document.getElementById('downBtn');
 const topBtn = document.getElementById('topBtn');
+const overview = document.getElementById('overview');
+const newTable = document.createElement('table');
+
+let x = 0;
+let y = 0;
 
 members.students.forEach((element) => {
   const newDiv = document.createElement('div');
@@ -12,8 +17,14 @@ members.students.forEach((element) => {
 
   imgEl.addEventListener('error', function () {
     this.setAttribute('src', './images/none.jpg');
-    console.clear();
+    // console.clear();
   });
+
+  if (element.gender === 'male') {
+    y++;
+  } else {
+    x++;
+  }
 
   newDiv.innerHTML = `
         <div class="info">
@@ -22,12 +33,27 @@ members.students.forEach((element) => {
         <p class="gender" id="gender"><span>${element.gender}</span></p>
         </div>
     `;
+
   newDiv.prepend(imgEl);
-
-  console.log(newDiv);
-
   container.appendChild(newDiv);
 });
+
+newTable.innerHTML = `
+        <tr>
+          <td colspan="2">
+            <p>total students <span> ${members.students.length}</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>girls <span> ${x}</span></p>
+          </td>
+          <td>
+            <p>boys <span> ${y} </span></p>
+          </td>
+        </tr>
+  `;
+overview.append(newTable);
 
 downBtn.addEventListener('click', (e) => {
   window.scrollTo(0, document.body.scrollHeight);
@@ -52,7 +78,5 @@ function updateDateTime() {
   const formattedDateTime = now.toLocaleDateString('en-US', options);
   dateTimeElement.textContent = formattedDateTime;
 }
-
 setInterval(updateDateTime, 1000);
-
 updateDateTime();

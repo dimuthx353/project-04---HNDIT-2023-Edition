@@ -97,6 +97,27 @@ h1 {
   margin-bottom: 40px;
 }
 
+.overview {
+  padding: 10px;
+}
+.overview table {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  max-width: 500px;
+}
+.overview table td {
+  padding: 20px;
+  border: 1px solid #fff;
+}
+.overview table td p {
+  display: flex;
+  justify-content: space-between;
+}
+.overview table td p span {
+  font-size: 1.2rem;
+}
+
 .container {
   padding: 20px;
   display: flex;

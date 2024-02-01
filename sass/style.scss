@@ -39,6 +39,31 @@ h1 {
   margin-bottom: 40px;
 }
 
+.overview {
+  padding: 10px;
+
+  table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    max-width: 500px;
+
+    td {
+      padding: 20px;
+      border: 1px solid #fff;
+
+      p {
+        display: flex;
+        justify-content: space-between;
+
+        span {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
+
 .container {
   padding: 20px;
   display: flex;
