@@ -180,6 +180,15 @@ h1 {
   margin-left: 5px;
 }
 
+#dateTime {
+  padding: 10px;
+  text-align: center;
+  margin-top: 10px;
+  background-color: #000;
+  color: white;
+  letter-spacing: 2px;
+}
+
 @keyframes spin {
   0% {
     rotate: 72deg;

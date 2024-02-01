@@ -36,3 +36,23 @@ downBtn.addEventListener('click', (e) => {
 topBtn.addEventListener('click', () => {
   window.scrollTo(0, 0);
 });
+
+function updateDateTime() {
+  const now = new Date();
+  const dateTimeElement = document.getElementById('dateTime');
+  const options = {
+    weekday: 'long',
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+    hour: 'numeric',
+    minute: 'numeric',
+    second: 'numeric'
+  };
+  const formattedDateTime = now.toLocaleDateString('en-US', options);
+  dateTimeElement.textContent = formattedDateTime;
+}
+
+setInterval(updateDateTime, 1000);
+
+updateDateTime();

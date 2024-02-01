@@ -138,6 +138,15 @@ h1 {
   }
 }
 
+#dateTime {
+  padding: 10px;
+  text-align: center;
+  margin-top: 10px;
+  background-color: #000;
+  color: #ffff;
+  letter-spacing: 2px;
+}
+
 @keyframes spin {
   0% {
     rotate: 72deg;
