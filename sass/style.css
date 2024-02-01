@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #000;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+button,
+input {
+  cursor: pointer;
+}
+
+button,
+select,
+input {
+  font-family: inherit;
+  text-transform: capitalize;
+}
+
+::-moz-placeholder {
+  text-transform: capitalize;
+}
+
+::placeholder {
+  text-transform: capitalize;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.grid-container {
+  display: grid;
+}
+
+.display-none {
+  display: none;
+}
+
+.clear-fix {
+  clear: both;
+}
+
+body {
+  padding: 10px;
+  background-color: #2234ae;
+  background-color: #2b4162;
+  background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%);
+}
+
+h1 {
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 2px;
+  font-family: "Roboto", sans-serif;
+  padding: 10px;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.downBtn,
+.topBtn {
+  font-size: 2rem;
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.topBtn {
+  margin-bottom: 40px;
+}
+
+.container {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.container > div {
+  height: 350px;
+  width: 276px;
+  margin: 20px;
+  padding: 20px 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 3px;
+  background-color: #2234ae;
+  background-image: linear-gradient(315deg, #121c5f 0%, #191714 74%);
+  box-shadow: rgba(255, 255, 255, 0.35) 0px 1px 1.6px;
+  cursor: pointer;
+}
+.container > div:hover img {
+  animation: spin 0.3s ease-in forwards;
+}
+.container > div img {
+  width: 150px;
+  height: 150px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+  border: 3px solid rgba(223, 224, 212, 0.907);
+  background-color: #182b3a;
+  margin-top: 20px;
+  transition: scale 0.8s ease-out;
+}
+.container > div img:hover {
+  transition: scale 0.8s ease-in-out;
+  scale: 1.1;
+}
+.container > div .info {
+  width: 100%;
+  margin-top: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.container > div .info .index > span {
+  font-size: 14px;
+  letter-spacing: 4px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.container > div .info .name {
+  font-weight: 400;
+  letter-spacing: 3px;
+  background: linear-gradient(to right, #f32170, #ff6b08, #cf23cf, #eedd44);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  font-size: 1.5rem;
+}
+.container > div .info .gender span {
+  letter-spacing: 2px;
+  font-size: 10px;
+  width: 100%;
+  display: block;
+  display: flex;
+  justify-content: end;
+  padding-right: 10px;
+  color: rgba(240, 240, 240, 0.4784313725);
+}
+.container > div .info p {
+  padding: 5px 0px;
+  text-align: center;
+}
+.container > div .info p span {
+  margin-left: 5px;
+}
+
+@keyframes spin {
+  0% {
+    rotate: 72deg;
+    border-top-color: rgb(0, 251, 255);
+  }
+  25% {
+    rotate: 144deg;
+    border-top-color: #fff;
+    border-right-color: rgb(60, 255, 0);
+  }
+  50% {
+    rotate: 216deg;
+    border-right-color: #fff;
+    border-bottom-color: rgb(187, 0, 255);
+  }
+  75% {
+    rotate: 288deg;
+    border-bottom-color: #fff;
+    border-left-color: rgb(0, 255, 94);
+  }
+  100% {
+    rotate: 360deg;
+    border: 3px solid rgba(223, 224, 212, 0.907);
+  }
+}
+@media screen and (max-width: 400px) {
+  .downBtn,
+  .topBtn {
+    font-size: 1.4rem;
+    bottom: 10px;
+    right: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */
